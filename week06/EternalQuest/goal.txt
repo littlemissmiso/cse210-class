@@ -1,0 +1,3 @@
+SimpleGoal|cat|cat|50
+EternalGoal|fish|fish fish|60
+ChecklistGoal|taco|taco taco|100|3|20
