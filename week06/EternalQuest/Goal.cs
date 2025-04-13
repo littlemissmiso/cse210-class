@@ -2,13 +2,13 @@ public abstract class Goal
 {
     private string _name;
     private string _description;
-    private string _points;
+    private int _points;
 
     public Goal(string name, string description, string points)
     {
         _name = name;
         _description = description;
-        _points = points;
+        _points = int.Parse(points);
     } 
 
     public virtual string GetDetailsString()
@@ -28,7 +28,7 @@ public abstract class Goal
         return _description;
     }
 
-    public string ShowPoints()
+    public int ShowPoints()
     {
         return _points;
     }
@@ -36,7 +36,7 @@ public abstract class Goal
     //These below stay blank (get overidden in other classes)
     public abstract string GetStringRepresentation(); //This should provide all the details of the goal in a way that is easy to save to a file and load later
 
-    public abstract void RecordEvent();
+    public abstract int RecordEvent();
     
     public abstract bool IsComplete();
     

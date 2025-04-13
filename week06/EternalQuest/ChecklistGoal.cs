@@ -30,9 +30,9 @@ public class ChecklistGoal : Goal
         return _bonus;
     }
 
-    public override void RecordEvent()
+    public override int RecordEvent()
     {
-        
+        return 0;
     }
 
     public int ChecklistProgress()

@@ -17,9 +17,9 @@ public class EternalGoal : Goal
         return $"[ ] {ShowName()} - {ShowDescription()} ({ShowPoints()} points each occurrence)";
     }
 
-    public override void RecordEvent()
+    public override int RecordEvent()
     {
-        
+        return 0;
     }
 
     public override bool IsComplete()

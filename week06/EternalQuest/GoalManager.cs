@@ -58,7 +58,7 @@ public class GoalManager
 
             if (_choice == "5")
             {
-
+                RecordEvent();
             }
 
             if (_choice == "6")
@@ -137,8 +137,11 @@ public class GoalManager
 
     public void RecordEvent()
     {
+        DisplayGoals();
         Console.WriteLine("Which goal did you complete?");
-        string _completionChoice = Console.ReadLine();
+        int _selection = int.Parse(Console.ReadLine());
+
+        Console.WriteLine(_selection);
 
         
     }
